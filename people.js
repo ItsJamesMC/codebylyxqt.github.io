@@ -1,10 +1,10 @@
 const images = [
-    "assest/unang-kita-ko-sayo.PNG", 
-    "assest/unang-kita-ko-sayo-2.PNG", 
-    "assest/unang-kita-ko-sayo-3.PNG", 
-    "assest/unang-kita-ko-sayo-4.PNG", 
-    "assest/unang-kita-ko-sayo-5.PNG",
-    "assest/unang-kita-ko-sayo-6.PNG"
+    "unang-kita-ko-sayo.PNG", 
+    "unang-kita-ko-sayo-2.PNG", 
+    "unang-kita-ko-sayo-3.PNG", 
+    "unang-kita-ko-sayo-4.PNG", 
+    "unang-kita-ko-sayo-5.PNG",
+    "unang-kita-ko-sayo-6.PNG"
 ];
 
 let currentIndex = 0;
