@@ -6,7 +6,6 @@ body {
     margin: 0;
     background-color: #f9e3d3; 
     font-family: 'Times New Roman', serif; 
-    background-image: url('https://www.transparenttextures.com/patterns/old-wall-paper.png'); 
     overflow: hidden;
 }
 
@@ -26,7 +25,7 @@ body {
 .illustration {
     width: 120px;
     height: 120px;
-    background-image: url('assest/picture-sa-passcode.png');
+    background-image: url('picture-sa-passcode.png');
     background-size: cover;
     border-radius: 12px;
     margin-bottom: 15px;
