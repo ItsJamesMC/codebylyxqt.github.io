@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANA MAGUSTUHAN HEHE</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fdf5e6;
+    color: #5a4d41;
+    font-size: 14px;
+    overflow: hidden;
+    flex-direction: column; 
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px 15px;
+    width: 85%;
+    max-width: 350px; 
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInUp 2s ease-in-out forwards;
+    margin-bottom: 100px; 
+}
+
+.heading {
+    font-size: 30px;
+    color: #e74c3c;
+    margin-bottom: 15px;
+    animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.paragraph1,
+.paragraph2,
+.invitation-location {
+    text-align: justify;
+    font-size: 14px; 
+    margin: 8px 0;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.paragraph1{
+    animation-delay: 1.5s;
+}
+
+.paragraph2 {
+    animation-delay: 2s;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 270px; 
+    width: 100%;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ff8a80;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+}
+
+.heartss {
+    font-size: 40px;
+    color: red;
+    margin-top: 20px;
+    animation: float 2s ease-in-out infinite, glow 1.5s infinite alternate;
+}
+
+.hearts {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    font-size: 20px;
+    color: rgba(255, 92, 92, 0.6);
+    animation: float 5s ease-in-out infinite;
+}
+.heart:nth-child(1) { top: 5%; left: 10%; }
+.heart:nth-child(2) { top: 10%; right: 15%; }
+.heart:nth-child(3) { top: 15%; left: 25%; }
+.heart:nth-child(4) { bottom: 10%; right: 20%; }
+.heart:nth-child(5) { bottom: 15%; left: 5%; }
+.heart:nth-child(6) { top: 20%; right: 5%; }
+.heart:nth-child(7) { bottom: 20%; left: 30%; }
+.heart:nth-child(8) { top: 25%; right: 25%; }
+.heart:nth-child(9) { bottom: 25%; left: 15%; }
+.heart:nth-child(10) { top: 30%; right: 35%; }
+.heart:nth-child(11) { top: 35%; left: 5%; }
+.heart:nth-child(12) { bottom: 30%; right: 10%; }
+.heart:nth-child(13) { top: 40%; left: 20%; }
+.heart:nth-child(14) { bottom: 35%; right: 30%; }
+.heart:nth-child(15) { top: 45%; left: 40%; }
+.heart:nth-child(16) { bottom: 40%; right: 15%; }
+.heart:nth-child(17) { top: 50%; left: 10%; }
+.heart:nth-child(18) { bottom: 50%; right: 25%; }
+.heart:nth-child(19) { top: 55%; left: 35%; }
+.heart:nth-child(20) { bottom: 55%; right: 5%; }
+.heart:nth-child(21) { top: 60%; left: 50%; }
+.heart:nth-child(22) { bottom: 60%; right: 40%; }
+.heart:nth-child(23) { top: 65%; left: 45%; }
+.heart:nth-child(24) { top: 65%; left: 45%; }
+.heart:nth-child(25) { top: 70%; left: 30%; }
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveHearts {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+</style>
+<body>
+    <div class="hearts">
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+    </div>
+    <div class="heart-background"></div>
+    <div class="container">
+        <h1 class="heading">HAPPY FIRST MONTHSARY !!</h1>
+        <p class="paragraph1">bebi alam mo po ba, ang dami kong kasinungalingan sayu para lang magawa to huhu,kasi wala po me madahilan hihi suwii po</p>
+        <br>
+        <p class="paragraph2">katulad ng idlip(kahit hindi), naglalaro(hindi rin naman), maaga natulog(wala nga tulog minsan wahh) huhu suwii po, pero sana po magustuhan niyo po ito hehehe ^^</p>
+    </div>
+
+    <div class="footer">
+        <a href="passcode.htm" class="button">Continue</a>
+    </div>
+
+    <script>
+        let countdown = 5;
+        const buttonElement = document.querySelector('.footer');
+        
+        setInterval(function() {
+            console.log(countdown + " seconds remaining...");
+            countdown--;
+            if (countdown < 0) {
+                clearInterval(this);
+                buttonElement.style.opacity = 1; 
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

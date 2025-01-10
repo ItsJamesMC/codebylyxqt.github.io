@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="people-second-page.css">
+    <script src="people-last-page.js" defer></script>
+    <title>Before Our Special Day</title>
+</head>
+<body>
+    <div class="hearts">❤️</div>
+    <div class="hearts">❤️</div>
+    <div class="hearts">❤️</div>
+    <div class="hearts">❤️</div>
+    <div class="hearts">❤️</div>
+    <div class="hearts">❤️</div>
+    <div class="hearts">❤️</div>
+
+    <div class="container">
+
+        <div class="header"></div>
+
+        <div class="top-content">
+            <p></p>
+        </div>
+
+        
+
+        <div class="image-box">
+            <img src="assest/pic1-last-page.png" alt="Conversation Screenshot 1" class="image" onclick="openModal(this)">
+            <button class="read-button" onclick="changeContent('message1')">Read</button>
+            <span class="arrow right" onclick="nextImage()">➔</span> 
+        </div>
+
+        <div class="image-box">
+            <img src="assest/pic2-last-page.PNG"Conversation Screenshot 2" class="image" onclick="openModal(this)">
+            <button class="read-button" onclick="changeContent('message2')">Read</button>
+            <span class="arrow right" onclick="nextImage()">➔</span> 
+        </div>
+
+        <div class="image-box">
+            <img src="assest/pic3-last-page.PNG" alt="Conversation Screenshot 3" class="image" onclick="openModal(this)">
+            <button class="read-button" onclick="changeContent('message3')">Read</button>
+            <span class="arrow right" onclick="nextImage()">➔</span> 
+        </div>
+
+        <div class="image-box">
+            <img src="assest/pic4-last-page.PNG" alt="Conversation Screenshot 4" class="image" onclick="openModal(this)">
+            <button class="read-button" onclick="changeContent('message4')">Read</button>
+            <span class="arrow right" onclick="nextImage()">➔</span> 
+        </div>
+
+        <div class="image-box">
+            <img src="assest/pic5-last-page.JPG" alt="Conversation Screenshot 5" class="image" onclick="openModal(this)">
+            <button class="read-button" onclick="changeContent('message5')">Read</button>
+            <span class="arrow right" onclick="nextImage()">➔</span> 
+        </div>
+
+        <div class="content" id="contentText">
+            NAG MYDAY IKAW NA NAG PAPANSIN SA ISANG KATULAD KO WAHH, (PUWEDE MO PO YAN CLICK YUNG IMAGE PARA MA VIEW HIHI TAS CLICK MO READ ME)  
+        </div>
+
+        <div class="footer">
+            <a href="javascript:history.back()" class="button">Back</a>
+            <a href="home-page.htm" class="button">Home</a>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <img src="" alt="Conversation Screenshot" id="modalImage">
+    </div>
+    
+</body>
+</html>

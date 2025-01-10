@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    background-color: #f3e0c9; 
+}
+img {
+    width: 50vmin;
+    height: 50vmin;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 3px solid white;
+    object-fit: cover;
+    transition: border 0.3s ease;
+}
+.question {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 38px; 
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+.highlight {
+    color: violet;
+    text-shadow: 0 0 5px violet, 0 0 10px violet, 0 0 15px violet, 0 0 20px violet;
+    font-weight: bold;
+}
+.buttons {
+    margin-top: 20px;
+}
+button {
+    font-size: 20px;
+    padding: 12px 25px;
+    margin: 0 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+button#yes {
+    background-color: #ff4d88;  
+    color: white;
+}
+button#yes:hover {
+    background-color: #ff1f6a; 
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(255, 105, 180, 0.4);
+}
+
+button#no {
+    background-color: #e57373;
+    color: white;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+button#no:hover {
+    background-color: #f44336;  
+    animation: move 0.5s infinite;
+}
+@keyframes move {
+    0% { transform: translateX(-20px); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(-20px); }
+}
+.fire-effect {
+    animation: fire 1s infinite alternate;
+}
+
+@keyframes fire {
+    0% {
+        background-color: #ff4500;  
+        box-shadow: 0 0 10px 5px rgba(255, 69, 0, 0.7);
+    }
+    100% {
+        background-color: #ff6347; 
+        box-shadow: 0 0 20px 10px rgba(255, 99, 71, 0.7);
+    }
+}
+.glowing-text {
+    color: red;  
+    text-shadow: 0 0 5px red, 0 0 1px red, 0 0 15px red; 
+    font-weight: bold;
+}
+.glowing-message {
+    animation: glowing-text-effect 1s infinite alternate;
+    color: red;  
+    font-weight: bold;
+    text-shadow: 0 0 5px red, 0 0 1px red, 0 0 0px red;  
+}
+
+@keyframes glowing-text-effect {
+    0% {
+        color: #ff4500;  
+        text-shadow: 0 0 10px 5px rgba(255, 69, 0, 0.7), 0 0 20px 10px rgba(255, 69, 0, 0.7);  
+    }
+    100% {
+        color: #ff6347;  
+        text-shadow: 0 0 20px 10px rgba(255, 99, 71, 0.7), 0 0 30px 15px rgba(255, 99, 71, 0.7); 
+    }
+}
+#clickCountMessage {
+    position: absolute;
+    top: 10px;
+    font-size: 24px;
+    color: #e53935;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+}
+.new-message {
+    color: #e53935;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

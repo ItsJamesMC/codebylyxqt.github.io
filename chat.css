@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif; 
+  background-color: #f1e6d7; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url('https://www.transparenttextures.com/patterns/old-wall-paper.png');
+}
+
+.container {
+  width: 375px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 25px; 
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); 
+  animation: fadeIn 0.8s ease-out;
+  border: 2px solid #e1b7b7; 
+  position: relative; 
+}
+
+.heart {
+  width: 50px;
+  height: 50px;
+  background-color: #ff6b6b;
+  position: absolute;
+  top: 0; 
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg); 
+  margin-top: 10px;
+}
+
+.heart:before,
+.heart:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #ff6b6b;
+  border-radius: 50%;
+  top: -25px;
+}
+
+.heart:before {
+  left: 0;
+}
+
+.heart:after {
+  right: 0;
+}
+
+.heart-bottom {
+  top: auto;
+  bottom: 0; 
+  margin-bottom: 10px;
+}
+
+.message-box {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: justify;
+  margin-bottom: 20px;
+  overflow-y: auto;
+  font-size: 16px;
+  color: #4d3c34; 
+  line-height: 1.7;
+  font-family: 'Times New Roman', serif; 
+}
+
+h1 {
+  color: #d33d49; 
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: 'Courier New', monospace; 
+}
+
+p {
+  font-size: 16px;
+  color: #5f4b4b; 
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 35px;
+  background-color: #f1a7a0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  border: 2px solid #e0a6a1;
+}
+
+.button:hover {
+  background-color: #d9786c;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

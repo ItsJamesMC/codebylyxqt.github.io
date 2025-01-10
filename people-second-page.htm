@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="people-second-page.css">
+    <script src="people-second-page.js" defer></script>
+    <title>Screenshots Messages</title>
+</head>
+<body>
+    <div class="hearts">❤️</div>
+    <div class="hearts">❤️</div>
+    <div class="hearts">❤️</div>
+    <div class="hearts">❤️</div>
+    <div class="hearts">❤️</div>
+    <div class="hearts">❤️</div>
+    <div class="hearts">❤️</div>
+
+    <div class="container">
+        <div class="header">Conversation namin ni Brittniee 💬</div>
+
+        <div class="image-box">
+            <img src="assest/Screenshot-Message1.PNG" alt="Conversation Screenshot 1" class="image" onclick="openModal(this)">
+            <button class="read-button" onclick="changeContent('message1')">Read</button>
+        </div>
+        <div class="image-box">
+            <img src="assest/Screenshot-Message2.PNG" alt="Conversation Screenshot 2" class="image" onclick="openModal(this)">
+            <button class="read-button" onclick="changeContent('message2')">Read</button>
+        </div>
+        <div class="image-box">
+            <img src="assest/Screenshot-Message3.PNG" alt="Conversation Screenshot 3" class="image" onclick="openModal(this)">
+            <button class="read-button" onclick="changeContent('message3')">Read</button>
+        </div>
+        <div class="image-box">
+            <img src="assest/Screenshot-Message4.PNG" alt="Conversation Screenshot 4" class="image" onclick="openModal(this)">
+            <button class="read-button" onclick="changeContent('message4')">Read</button>
+        </div>
+        <div class="image-box">
+            <img src="assest/Screenshot-Message5.PNG" alt="Conversation Screenshot 5" class="image" onclick="openModal(this)">
+            <button class="read-button" onclick="changeContent('message5')">Read</button>
+        </div>
+        <div class="image-box">
+            <img src="assest/Screenshot-Message6.PNG" alt="Conversation Screenshot 6" class="image" onclick="openModal(this)">
+            <button class="read-button" onclick="changeContent('message6')">Read</button>
+        </div>
+
+        <div class="content" id="contentText">
+            tinanong ko kung sino ka, and ito yung convo namin ni Whin, puwede mo po pindutin yung picture kung gusto mo mabasa yung screenshot hihi. 
+        </div>
+
+        <div class="footer">
+            <a href="javascript:history.back()" class="button">Back</a>
+            <a href="people-third-page.htm" class="button">Continue</a>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <img src="" alt="Conversation Screenshot" id="modalImage">
+    </div>
+
+    <script src="people-second-page.js"></script>
+</body>
+</html>

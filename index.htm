@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="do-you-love-me.css">
+    <title>Do You Love Me?</title>
+</head>
+<body>
+    <img id="image" src="/assest/cute-cat.jpg" alt="Cute Cat">
+
+    <div id="clickCountMessage" style="display: none;"></div>
+
+    <div class="question">
+        Bebi <span class="highlight">I Love You</span>, Do you love me rin ba?
+    </div>
+
+    <div class="buttons">
+        <button id="yes" onclick="location.href='after-the-do-you-love-me.htm'">Opo</button>
+        <button id="no">Hindi haha</button>
+    </div>
+
+    <script>
+let clickCount = 0; 
+const noButton = document.getElementById('no');
+const yesButton = document.getElementById('yes');
+const clickCountMessage = document.getElementById('clickCountMessage');
+const questionText = document.querySelector('.question'); 
+const image = document.getElementById('image'); 
+
+
+function showMessageAfterClicks() {
+    if (clickCount % 4 === 0 && clickCount !== 0) {
+        clickCountMessage.textContent = `pang ${clickCount} times mo na pinindot yan, haha. hindi mo na ba ako mahal?`;
+        clickCountMessage.style.display = 'block';  
+    }
+   
+    if (clickCount === 8) {
+        clickCountMessage.style.display = 'none';
+
+        const newMessage = document.createElement('div');
+        newMessage.textContent = `sakit haha pang ${clickCount} times mo na yan..`;
+        newMessage.style.color = '#e53935';  
+        newMessage.style.fontWeight = 'bold'; 
+        newMessage.style.fontSize = '24px';  
+        newMessage.style.textAlign = 'center';  
+        newMessage.style.marginBottom = '10px'; 
+        newMessage.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+        newMessage.style.padding = '10px';
+        newMessage.style.borderRadius = '8px';
+        newMessage.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+                
+        newMessage.classList.add('glowing-message'); 
+
+        document.body.insertBefore(newMessage, document.body.firstChild);
+                
+        noButton.style.display = 'none';  
+        yesButton.textContent = 'Grr';  
+        yesButton.classList.add('fire-effect'); 
+
+       
+        image.src = '/assest/grr.gif'; 
+
+       
+        questionText.textContent = 'Hindi mo na ako mahal ha, okay ganyan kana ';
+        
+
+        questionText.classList.add('glowing-text'); 
+    }
+}
+
+noButton.addEventListener('click', () => {
+    clickCount++; 
+    showMessageAfterClicks(); 
+
+    
+    const randomX = Math.random() * 300 - 150;
+    const randomY = Math.random() * 300 - 150;  
+    noButton.style.transform = `translate(${randomX}px, ${randomY}px)`;
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3e5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff8f0;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    max-width: 375px;
+    position: relative;
+    z-index: 1;
+    border: 2px solid #f2c8a0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-image: url('https://www.transparenttextures.com/patterns/old-wall-1.png');
+    background-size: 100%;
+}
+
+.header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e91e63;
+}
+
+.content {
+    background-color: #fff9c4;
+    border: 2px dashed #ffca28;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #5d4037;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ff8a80;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+}
+
+.image-container {
+    position: relative;
+}
+
+.image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.overlay-text {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    opacity: 80%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+    z-index: 2; 
+    pointer-events: none; 
+}
+
+.hearts {
+    position: absolute;
+    font-size: 40px;
+    color: #ff4081;
+    animation: float 3s ease-in-out infinite;
+}
+
+.hearts:nth-child(1) { top: 5%; left: 10%; animation-delay: 0s; }
+.hearts:nth-child(2) { top: 20%; left: 80%; animation-delay: 1s; }
+.hearts:nth-child(3) { top: 80%; left: 20%; animation-delay: 2s; }
+.hearts:nth-child(4) { top: 30%; left: 40%; animation-delay: 1.5s; }
+.hearts:nth-child(5) { top: 50%; left: 60%; animation-delay: 2.5s; }
+.hearts:nth-child(6) { top: 70%; left: 30%; animation-delay: 3s; }
+.hearts:nth-child(7) { top: 10%; left: 70%; animation-delay: 4s; }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 16px;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.left { left: 0; }
+.right { right: 0; }
+
+.close:hover,
+.close:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        font-size: 1.4em;
+    }
+
+    .content {
+        font-size: 0.85em;
+    }
+
+    .button {
+        padding: 6px 12px;
+    }
+
+    .hearts {
+        font-size: 35px;
+    }
+}

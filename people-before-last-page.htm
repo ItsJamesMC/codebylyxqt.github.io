@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=375, initial-scale=1.0">
+    <title>Nung Nagkita tayo sa daan</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f3e5f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .hearts {
+            position: absolute;
+            font-size: 2em;
+            animation: float 4s ease-in-out infinite;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.8;
+        }
+
+        .hearts:nth-child(2) {
+            animation-delay: 1s;
+            font-size: 2.5em;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .content {
+            background: linear-gradient(to bottom right, #fff9c4, #ffecb3);
+            border: 1px solid #ffca28;
+            border-radius: 15px;
+            padding: 18px 22px;
+            font-size: 1.1em;
+            color: #5d4037;
+            line-height: 1.6;
+            max-width: 90%;
+            margin-top: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            position: relative;
+            z-index: 1;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+        }
+
+        .content h1 {
+            font-size: 1.5em;
+            font-family: 'Verdana', sans-serif;
+            color: #d32f2f;
+            margin-bottom: 15px;
+            text-align: center;
+            text-transform: uppercase; 
+        }
+
+        .content p {
+            font-size: 1em;
+            color: #3e2723;
+            letter-spacing: 0.5px;
+            text-indent: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content a {
+            color: #ff6f00;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid #ff6f00;
+            transition: all 0.3s ease;
+        }
+
+        .content a:hover {
+            color: #d32f2f;
+            border-color: #d32f2f;
+        }
+
+        .footer {
+            
+            padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    gap: 4px;
+}
+
+        .button {
+            
+            display: inline-block;
+            padding: 8px 16px; 
+            background-color: #ff8a80;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            width: 48%;
+            text-align: center;
+            font-size: 0.9em; 
+        }
+
+        .button:hover {
+            background-color: #ff5252;
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 375px) {
+            .content {
+                font-size: 1em;
+                padding: 18px 20px;
+                margin: 10px auto;
+            }
+
+            .content h1 {
+                font-size: 1.3em;
+            }
+
+            .content p {
+                font-size: 1em;
+                line-height: 1.6;
+                margin-bottom: 15px;
+                text-indent: 25px;
+            }
+
+            .footer {
+                padding: 0 10px;
+                gap: 8px;
+            }
+
+            .button {
+                width: 48%;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts">❤️</div>
+    <div class="hearts">💖</div>
+
+    <div class="content" id="contentText">
+        <h1> Our Special Day</h1>
+        <p>Hindi ko ito malilimutan, ang araw na nag cross ang ating landas, December 4, 2024. Last subject na to at ito ang araw na nginitian mo ako, at ako, hindi ko napigilang mag-ngiti pabalik sayo grabe, parang nawala yung pagka poker face ko non at hindi ko maalis sa isip ko ang mga ngiti mo non(habang tinatype ko ito, naaalala ko ang pa rin ang imong ngiti hanggang ngayon)Mabuti na lang at nasa labas kami noon, at ikaw ay nag-cr, kaya nag-cross ang ating landas. Hinding-hindi ko malilimutan ang araw na yon wahh kamiss </p>
+        <p>Pagkatapos ng klase, uwian na, papunta na ako kina Whin, naglalakad sa may hallway at hindi ko napansin na kasama mo pala sina Whin hindi ako nag dalawang isip na mag b-bye sayo, Nag lalakad na kami nina Whin pauwi na kami, nag tanong ako sakanya kung anong ginagawa mo ron at sinabi niya na hinintay mo raw ako. Na-shock ako, kasi bakit MAY MAGANDANG NAGHIHINTAY sakin? hindi talaga ako makapakli non kaka isip kung anong sapat na dahilan mo para antayin ang katulad ko? huhu</p>
+        <p>pero pagka uwi ku natulog agad ako, at pakagising ko may nag c-chat sakin na makulit, wahh si Whinliee message ng message, at doon biglang bumungad ang </p>
+    </div>
+
+
+    <div class="footer">
+        <a href="javascript:history.back()" class="button">Back</a>
+        <a href="people-last-page.htm" class="button">Continue</a>
+    </div>
+</body>
+</html>
