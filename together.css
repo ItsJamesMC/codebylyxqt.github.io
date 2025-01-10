@@ -14,7 +14,7 @@ body {
 .illustration {
     width: 120px; 
     height: 120px;
-    background-image: url('assest/picture-sa-together.png');
+    background-image: url('picture-sa-together.png');
     background-size: cover;
     border-radius: 20px;
     margin-bottom: 10px;
